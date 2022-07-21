@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Scover.WPFzard</RootNamespace>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Description>A simple WPF wizard helper that uses page navigation. Open for extension.</Description>
+    <Copyright>(c) Scover 2022</Copyright>
+    <PackageProjectUrl>https://github.com/5cover/WPFzard</PackageProjectUrl>
+    <PackageIcon>wizard.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/5cover/WPFzard.git</RepositoryUrl>
+    <PackageTags>wpf;wizard;ui;.net;user-interface;c#</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <PackageLicenseFile>README.md</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="D:\Scover\Pictures\wizard.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ButtonContents.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ButtonContents.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ButtonContents.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ButtonContents.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
