@@ -19,6 +19,7 @@
     <NeutralLanguage>en-US</NeutralLanguage>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <PackageLicenseFile>README.md</PackageLicenseFile>
+    <AssemblyName>Scover.$(MSBuildProjectName)</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
