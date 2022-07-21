@@ -1,12 +1,14 @@
-﻿# Wizard
+![WPFZard logo](wizard.png)
+ 
+ # WPFZard
 
 A simple WPF wizard helper that uses page navigation. Open for extension.
 
 ## How to use?
 
-Wizard is very simple to use. Here is an example of a simple wizard with 3 pages:
+WPFZard is very simple to use. Here is an example of a simple wizard with 3 pages:
 
-````csharp
+```csharp
 Wizard wizard = new(new List<WizardPage>
 {
     new Page1(),
@@ -19,21 +21,23 @@ Wizard wizard = new(new List<WizardPage>
 };
 _ = wizard.ShowDialog();
 ```
+Since ``Wizard`` inherits from ``Window``, we can use all the common window properties there.
+
 And here's a simplistic page definition:
 
 ```xaml
-<Page
+<wizard:WizardPage
     x:Class="Page1"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:wizard="clr-namespace:Scover;assembly=Scover.WpfZard"
     mc:Ignorable="d">
     This is the first page.
-</Page>
+</wizard:WizardPage>
+```
 
 It's up to you to add custom content to theses pages in order to create a functionning wizard.
 
-Also, don't forget to set your base page class to ``Scover.Wizard.WizardPage`` instead of the default ``System.Windows.Controls.Page``.
-
-As an alternative, you can inherit from ``Scover.Wizard.FinishPage`` or ``Scover.Wizard.ChoicePage`` to have the buttons already defined.
+As an alternative, you can inherit from ``Scover.WPFzard.FinishPage`` or ``Scover.WPFzard.ChoicePage`` to have the buttons already defined.
