@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFzard", "Wizard\WPFzard.csproj", "{8129AABC-761C-4DF5-90F9-6E7E3314882D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFzard", "WPFzard.csproj", "{8129AABC-761C-4DF5-90F9-6E7E3314882D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

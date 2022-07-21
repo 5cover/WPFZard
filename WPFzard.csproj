@@ -22,7 +22,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="D:\Scover\Pictures\wizard.png">
+    <None Include="wizard.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
