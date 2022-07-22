@@ -1,4 +1,4 @@
-﻿namespace Scover.WPFzard;
+﻿namespace Scover.WPFZard;
 
 /// <summary>The type of a wizard button.</summary>
 public enum WizardButtonType

@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Windows.Controls;
 
-namespace Scover.WPFzard;
+namespace Scover.WPFZard;
 
 /// <summary>A wizard button shown below a wizard page.</summary>
 public class WizardButton : Button

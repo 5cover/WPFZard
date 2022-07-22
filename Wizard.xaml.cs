@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace Scover.WPFzard;
+namespace Scover.WPFZard;
 
 /// <summary>A Windows wizard that uses page navigation.</summary>
 public partial class Wizard : Window

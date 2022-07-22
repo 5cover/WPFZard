@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace Scover.WPFzard;
+namespace Scover.WPFZard;
 
 /// <summary>A wizard page with buttons.</summary>
 public abstract class WizardPage : Page

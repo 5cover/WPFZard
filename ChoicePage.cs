@@ -1,4 +1,4 @@
-﻿namespace Scover.WPFzard;
+﻿namespace Scover.WPFZard;
 
 /// <summary>A wizard page that gathers information and allows users to make choices.</summary>
 public class ChoicePage : WizardPage
