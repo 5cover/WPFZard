@@ -9,7 +9,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Description>A simple WPF wizard helper that uses page navigation. Open for extension.</Description>
-    <Copyright>(c) Scover 2022</Copyright>
+    <Copyright>(c) 2022 Scover</Copyright>
     <PackageProjectUrl>https://github.com/5cover/WPFzard</PackageProjectUrl>
     <PackageIcon>wizard.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -18,7 +18,7 @@
     <PackageReleaseNotes>Initial release</PackageReleaseNotes>
     <NeutralLanguage>en-US</NeutralLanguage>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
-    <PackageLicenseFile>README.md</PackageLicenseFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <AssemblyName>Scover.$(MSBuildProjectName)</AssemblyName>
   </PropertyGroup>
 
