@@ -10,10 +10,10 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Description>A simple WPF wizard helper that uses page navigation. Open for extension.</Description>
     <Copyright>(c) 2022 Scover</Copyright>
-    <PackageProjectUrl>https://github.com/5cover/WPFzard</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/5cover/WPFZard</PackageProjectUrl>
     <PackageIcon>wizard.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/5cover/WPFzard.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/5cover/WPFZard.git</RepositoryUrl>
     <PackageTags>wpf;wizard;ui;.net;user-interface;c#</PackageTags>
     <PackageReleaseNotes>Initial release</PackageReleaseNotes>
     <NeutralLanguage>en-US</NeutralLanguage>

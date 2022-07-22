@@ -40,4 +40,4 @@ And here's a simplistic page definition:
 
 It's up to you to add custom content to theses pages in order to create a functionning wizard.
 
-As an alternative, you can inherit from ``Scover.WPFzard.FinishPage`` or ``Scover.WPFzard.ChoicePage`` to have the buttons already defined.
+As an alternative, you can inherit from ``Scover.WPFZard.FinishPage`` or ``Scover.WPFZard.ChoicePage`` to have the buttons already defined.
