@@ -20,6 +20,9 @@
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <AssemblyName>Scover.$(MSBuildProjectName)</AssemblyName>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <AssemblyVersion>$(PackageVersion)</AssemblyVersion>
+    <FileVersion>$(PackageVersion)</FileVersion>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
