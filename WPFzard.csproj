@@ -18,8 +18,8 @@
     <PackageReleaseNotes>Initial release</PackageReleaseNotes>
     <NeutralLanguage>en-US</NeutralLanguage>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <AssemblyName>Scover.$(MSBuildProjectName)</AssemblyName>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
