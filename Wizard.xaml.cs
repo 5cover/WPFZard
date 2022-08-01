@@ -18,6 +18,11 @@ public partial class Wizard : Window
         PageIndex = 0;
     }
 
+    /// <inheritdoc cref="Wizard(IReadOnlyList{WizardPage})"/>
+    public Wizard(params WizardPage[] pages) : this((IReadOnlyList<WizardPage>)pages)
+    {
+    }
+
     /// <summary>Gets the pages of this wizard.</summary>
     /// <value>The pages of this wizard.</value>
     public IReadOnlyList<WizardPage> Pages { get; } = new List<WizardPage>();
