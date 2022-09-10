@@ -3,7 +3,7 @@
  # WPFZard
 
 A simple WPF wizard helper that uses page navigation. Open for extension.
-
+[Download on NuGet](https://www.nuget.org/packages/Scover.WPFZard)
 ## How to use?
 
 WPFZard is very simple to use. Here is an example of a simple wizard with 4 pages:
