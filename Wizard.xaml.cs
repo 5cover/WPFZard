@@ -25,7 +25,7 @@ public partial class Wizard : Window
 
     /// <summary>Gets the pages of this wizard.</summary>
     /// <value>The pages of this wizard.</value>
-    public IReadOnlyList<WizardPage> Pages { get; } = new List<WizardPage>();
+    public IReadOnlyList<WizardPage> Pages { get; }
 
     /// <summary>Gets or sets the page index.</summary>
     /// <value>The index of the page in <see cref="Pages"/> that is currently being shown.</value>
@@ -77,21 +77,21 @@ public partial class Wizard : Window
 
         switch (button.Type)
         {
-            case WizardButtonType.Back:
-                SetVisibleWhen(!isFirstPage);
-                break;
+        case WizardButtonType.Back:
+            SetVisibleWhen(!isFirstPage);
+            break;
 
-            case WizardButtonType.Cancel:
-                SetVisibleWhen(!isLastPage);
-                break;
+        case WizardButtonType.Cancel:
+            SetVisibleWhen(!isLastPage);
+            break;
 
-            case WizardButtonType.Finish:
-                SetVisibleWhen(isLastPage);
-                break;
+        case WizardButtonType.Finish:
+            SetVisibleWhen(isLastPage);
+            break;
 
-            case WizardButtonType.Next:
-                SetVisibleWhen(!isLastPage);
-                break;
+        case WizardButtonType.Next:
+            SetVisibleWhen(!isLastPage);
+            break;
         }
         void SetVisibleWhen(bool visibleElseCollapsed) => button.Visibility = visibleElseCollapsed ? Visibility.Visible : Visibility.Collapsed;
     }

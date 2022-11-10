@@ -1,6 +1,6 @@
 ﻿namespace Scover.WPFZard;
 
-/// <summary>A wizard page concludes the wizard.</summary>
+/// <summary>A wizard page that concludes the wizard.</summary>
 public class FinishPage : WizardPage
 {
     /// <inheritdoc/>
