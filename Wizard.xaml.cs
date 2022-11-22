@@ -1,10 +1,9 @@
 ﻿using System.Windows;
-using System.Windows.Controls;
 
 namespace Scover.WPFZard;
 
 /// <summary>A Windows wizard that uses page navigation.</summary>
-public partial class Wizard : Window
+public partial class Wizard
 {
     private int _index;
 
@@ -44,7 +43,7 @@ public partial class Wizard : Window
 
     private void AddButtons(int pageIndex)
     {
-        foreach (WizardButton button in Pages[pageIndex].Buttons)
+        foreach (var button in Pages[pageIndex].Buttons)
         {
             button.Click += GetClickEvent(button);
             SetVisibility(button, pageIndex);
@@ -58,7 +57,7 @@ public partial class Wizard : Window
         WizardButtonType.Back => (_, _) => --PageIndex,
         WizardButtonType.Cancel => (_, _) => DialogResult = false,
         WizardButtonType.Finish => (_, _) => DialogResult = true,
-        _ => (_, _) => ++PageIndex,
+        _ => (_, _) => ++PageIndex
     };
 
     private void RemoveButtons()
@@ -77,21 +76,21 @@ public partial class Wizard : Window
 
         switch (button.Type)
         {
-        case WizardButtonType.Back:
-            SetVisibleWhen(!isFirstPage);
-            break;
+            case WizardButtonType.Back:
+                SetVisibleWhen(!isFirstPage);
+                break;
 
-        case WizardButtonType.Cancel:
-            SetVisibleWhen(!isLastPage);
-            break;
+            case WizardButtonType.Cancel:
+                SetVisibleWhen(!isLastPage);
+                break;
 
-        case WizardButtonType.Finish:
-            SetVisibleWhen(isLastPage);
-            break;
+            case WizardButtonType.Finish:
+                SetVisibleWhen(isLastPage);
+                break;
 
-        case WizardButtonType.Next:
-            SetVisibleWhen(!isLastPage);
-            break;
+            case WizardButtonType.Next:
+                SetVisibleWhen(!isLastPage);
+                break;
         }
         void SetVisibleWhen(bool visibleElseCollapsed) => button.Visibility = visibleElseCollapsed ? Visibility.Visible : Visibility.Collapsed;
     }
