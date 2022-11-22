@@ -15,15 +15,14 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/5cover/WPFZard.git</RepositoryUrl>
     <PackageTags>wpf;wizard;ui;.net;user-interface;c#</PackageTags>
-    <PackageReleaseNotes>Changed main namespace case.
-Added an SPDX license expression.</PackageReleaseNotes>
+    <PackageReleaseNotes>Added params constructor to Wizard.</PackageReleaseNotes>
     <NeutralLanguage>en-US</NeutralLanguage>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <AssemblyName>Scover.$(MSBuildProjectName)</AssemblyName>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <AssemblyVersion>$(PackageVersion)</AssemblyVersion>
     <FileVersion>$(PackageVersion)</FileVersion>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
