@@ -9,17 +9,15 @@ A simple WPF wizard helper that uses page navigation. Open for extension.
 WPFZard is very simple to use. Here is an example of a simple wizard with 4 pages:
 
 ```csharp
-Wizard wizard = new(new List<WizardPage>
-{
-    new Page1(),
-    new Page2(),
-    new Page3(),
-    new Page4()
-})
+Wizard wizard = new(new Page1(),
+                    new Page2(),
+                    new Page3(),
+                    new Page4())
 {
     Title = "My Wizard",
 };
 _ = wizard.ShowDialog();
+
 ```
 Since ``Wizard`` inherits from ``Window``, we can use all the common window properties there.
 
