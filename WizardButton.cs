@@ -15,7 +15,7 @@ public class WizardButton : Button
     {
         string resourceName = Enum.GetName(type) ?? throw new InvalidEnumArgumentException(nameof(type), (int)type, typeof(WizardButtonType));
         Content = ButtonContents.ResourceManager.GetString(resourceName)!;
-        Debug.Assert(Content is not null, $"Missing ressource in {nameof(ButtonContents)}: {resourceName}");
+        Debug.Assert(Content is not null, $"Missing resource in {nameof(ButtonContents)}: {resourceName}");
         Type = type;
     }
 

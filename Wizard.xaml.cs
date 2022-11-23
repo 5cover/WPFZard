@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Diagnostics;
+using System.Windows;
 
 namespace Scover.WPFZard;
 
@@ -94,6 +95,10 @@ public partial class Wizard
 
             case WizardButtonType.Next:
                 SetVisibleWhen(!isLastPage);
+                break;
+
+            default:
+                Debug.Fail($"Invalid {nameof(WizardButton)} enum: {button.Type}");
                 break;
         }
         void SetVisibleWhen(bool visibleElseCollapsed) => button.Visibility = visibleElseCollapsed ? Visibility.Visible : Visibility.Collapsed;
