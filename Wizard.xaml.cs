@@ -14,6 +14,10 @@ public partial class Wizard
     {
         InitializeComponent();
         Pages = pages ?? throw new ArgumentNullException(nameof(pages));
+        if (!pages.Any())
+        {
+            throw new ArgumentException("Page list is empty", nameof(pages));
+        }
         PageIndex = 0;
     }
 
